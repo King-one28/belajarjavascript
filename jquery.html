@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .lingkaran1{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background: white;
+        }
+        .lingkaran2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background: white;
+        }
+        .lingkaran3{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="tombol1">Klik untuk merubah warna</button>
+    <br></br><div class="lingkaran1"></div> 
+    
+    <button id="tombol2">Klik untuk merubah warna</button>
+    <br></br><div class="lingkaran2"></div>  
+    
+    <button id="tombol3">Klik untuk merubah warna</button>
+    <br></br><div class="lingkaran3"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $("#tombol1").click(function(){
+            $(".lingkaran1").css("background","red");
+        });
+    </script>
+     <script>
+        $("#tombol2").click(function(){
+            $(".lingkaran2").css("background","yellow");
+        });
+    </script>
+     <script>
+        $("#tombol3").click(function(){
+            $(".lingkaran3").css("background","green");
+        });
+    </script>
+    
+</body>
+</html>
